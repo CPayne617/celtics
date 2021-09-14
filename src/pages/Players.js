@@ -2,13 +2,12 @@ const Players = (props) => {
     // console.log(props)
     
     return(
-        <div>
-            <h1>
-                {props.players.name}
-            </h1>
-            <h2>
-                {props.players.postion}
-            </h2>
+        <div id='players'>
+            <p>
+                <b> {props.players.name} </b> {props.players.position} {/*<b>means to make text bold</b> */}
+            </p>
+            
+           
         </div>
     )
 }

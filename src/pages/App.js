@@ -11,6 +11,7 @@ import '../App.css'
 
 const App = () => {
 
+  // //failed api-key
   // const options = {
   //   method: 'GET',
   //   url: 'https://api-nba-v1.p.rapidapi.com/teams/city/boston',
@@ -49,7 +50,7 @@ const App = () => {
     },
     {
       name: 'Payton Pritchard',
-      position: 'SG/PG'
+      position: ' SG/PG'
     },
     {
       name: 'Romeo Langford',
@@ -64,7 +65,7 @@ const App = () => {
       position: 'C/PF'
     },
     {
-      name: 'Enes Kanter',
+      name: 'Enes Kanter ',
       position: 'C'
     },
     {
@@ -93,15 +94,15 @@ const App = () => {
     },
     {
       name: 'Kris Dunn',
-      postion: 'SG/PG'
+      position: 'SG/PG'
     },
     {
       name: 'Juhann Begarin',
-      postion: 'SG/PG'
+      position: 'SG/PG'
     },
     {
       name: 'Luke Kornet',
-      postion: 'PF/C'
+      position: 'PF/C'
     },
   ])
   console.log(players)
