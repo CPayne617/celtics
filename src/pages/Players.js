@@ -1,13 +1,22 @@
-const Players = (props) => {
-    // console.log(props)
+function Players (props){
+
+
+
     
-    return(
+    return (
         <div id='players'>
-            <p>
-                <b> {props.players.name} </b> {props.players.position} {/*<b>means to make text bold</b> */}
-            </p>
-            
-           
+
+            { props.players.map((player) => 
+        
+        <div>
+            <b> {player.name} </b>
+            {player.position}
+            <img src={`${player.image}`} />
+        </div>
+    
+)}
+
+
         </div>
     )
 }

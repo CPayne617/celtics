@@ -25,11 +25,11 @@
     text-align: center;
     width: 100%;
   }
-  #players {
-    display: flex;
-    align-items: start;
+  #history {
+    background-color: black;
   }
-  
-    
+  #img {
+    height: 10cm;
+  }
 
   
