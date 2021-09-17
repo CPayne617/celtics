@@ -95,19 +95,25 @@ const History = () => {
                 <strong>2003:</strong> May 9th Celtics announced Danny Ainge as new Executive Director of Basketball Operations</li>
             <li style={{color: "green"}}>
                 <strong>2004:</strong> April 29th Glenn Anton "Doc" Rivers is hired as the teams head coach. Doc would be the 16th head coach in Celtics franchise history</li>
-            <li style={{color: "green"}}>
+            <li style={{color: "red"}}>
                 <strong>2006:</strong> The greatest NBA coach/executive/president, Celtics President and so much more The Great Red Auerbach dies. Celtics fans all over feel the lost along with his family and loved ones</li>
             <li style={{color: "green"}}>
                 <strong>2007:</strong> During the NBA Draft June 28th, the Celtics trade the 3rd overall draft pick (Jeff Green), along with Wally Szczerbiak & Delonte West for Ray Allen & 35th overall draft pick (Glenn "Big Baby" Davis), from the Seattle Supersonics
             </li>
             <li style={{color: "gold"}}>
-                <strong>2007:</strong> July 31st, The Celtics traded Ryan Gomes, Gerald Green, Al Jefferson, Theo Ratliff, Sebastian Telfair, & two 2009 1st round picks, to the Minnesota Timberwolves for Kevin Garnett. Creating a new "Big Three" of Pierce, Garnett, & Allen
+                <strong>2007:</strong> July 31st, The Celtics traded Ryan Gomes, Gerald Green, Al Jefferson, Theo Ratliff, Sebastian Telfair, & two 2009 1st round picks, to the Minnesota Timberwolves for Kevin Garnett. Creating a new "Big 3" of Pierce, Garnett, & Allen
             </li>
             <li style={{color: "gold"}}>
                 <strong>2008:</strong> June 17th, In a game 6 of the NBA finals against the rivals Lakers. Celtics completed the largest singal-season turnaround in NBA history. Beating Los Angles easily 92-131, In front of a pack TD Garden home crowd win their 17th championships
             </li>
             <li style={{color: "red"}}>
-                <strong>2012:</strong> Ray "Original Snake" Allen joins up with the player he & his alleged brothers spent the last 5 seasons in direct competition with in the eastern conference finals/semi's (LeBron James), right after being eleminated by James new Miami Heats team
+                <strong>2012:</strong> June 11th Ray "Original Snake" Allen joins with the player him & his alleged brothers spent 5 seasons in direct competition with in the eastern conference finals/semi's (LeBron James), right after being eleminated by James new Miami Heats team
+            </li>
+            <li style={{color: "green"}}>
+                <strong>2013:</strong> Head coach Doc Rivers didn't want to be apart of another rebuild and was allowed to terminate his contract, & sign with the Los Angles Clippers. The Celtics received a 2015 1st round pick as compensation from the Clippers
+            </li>
+            <li style={{color: "green"}}>
+                <strong>2013:</strong> The "Big 3" is fully dissaembled with the trade of Paul Pierce, Kevin Garnett, Jason Terry, D.J. White, a 2017 1st rd, & 2017 2nd rd picks to Brooklyn Nets for 4 1st rd picks from 2014-2017 the last was a option to swap & 5 Nets players
             </li>
         </ul>
     </div>

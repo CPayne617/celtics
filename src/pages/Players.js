@@ -11,7 +11,9 @@ function Players (props){
         <div>
             <b> {player.name} </b>
             {player.position}
+            <div className='photo'>
             <img src={`${player.image}`} />
+            </div>
         </div>
     
 )}

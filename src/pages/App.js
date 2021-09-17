@@ -4,7 +4,6 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import axios from 'axios';
 
-
 import JaylenBrown from './../assets/JaylenBrown.png';
 import JasonTatum from './../assets/JasonTatum.png';
 import MarcusSmart from './../assets/MarcusSmart.png';
@@ -25,7 +24,6 @@ import JuhannBegarin from './../assets/JuhannBegarin.jpeg';
 import LukeKornet from './../assets/LukeKornet.png';
 import JuwanMorgan from './../assets/JuwanMorgan.png';
 
-
 import Home from "./Home";
 import Players from "./Players";
 import History from './History';
@@ -33,25 +31,6 @@ import History from './History';
 import '../App.css';
 
 function App() {
-
-  //failed api-key
-  // const options = {
-  //   method: 'GET',
-  //   url: 'https://api-nba-v1.p.rapidapi.com/teams/city/boston',
-  //   headers: {
-  //     'x-rapidapi-host': 'api-nba-v1.p.rapidapi.com',
-  //     'x-rapidapi-key': '0e5e888695mshcef663154da3dafp1ae7dfjsnf0fab7a9da17'
-  //   }
-  // };
-  
-   
-  
-
-  // axios.request(options).then(function (response) {
-  //   console.log(response.data);
-  // }).catch(function (error) {
-  //   console.error(error);
-  // });
 
   const [players, setPlayers] = useState([
     {
@@ -149,21 +128,22 @@ function App() {
       position: 'SF/PF',
       image: `${JuwanMorgan}`
     },
-  ])
+  ]);
+  // I setup a API to get players information and called it playerList 
+const [playerList, setPlayerList] = useState([])
   
-
-  // const playersList = players.map((players) => <Players players={players} />)
-  useEffect(() => {
-    axios.get('https://free-nba.p.rapidapi.com/players/%7Bid%7D', {
-      headers: {
-        'x-rapidapi-host': 'api-nba-v1.p.rapidapi.com',
-        'x-rapidapi-key': '0e5e888695mshcef663154da3dafp1ae7dfjsnf0fab7a9da17'}
-    }).then(response => console.log(response)).catch(err => console.log(err))
-   
-  }, [])
+useEffect(() => {
+  axios.get("https://www.balldontlie.io/api/v1/players")
+  .then( res => {
+    console.log(res.data.data)
+    setPlayerList(res.data.data)
+  }).catch(err => {
+    console.log(err)
+  })
+}, [])
+ 
   return (
-    <div id="app">
-      
+    <div id="app">      
       <NavBar />
       <Switch>
         <Route path="/home">
@@ -176,8 +156,7 @@ function App() {
         <Route path="/history">
           <History />
         </Route>
-      </Switch>
-      
+      </Switch>      
       <Footer />
     </div>
   )
