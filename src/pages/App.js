@@ -4,6 +4,13 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import axios from 'axios';
 
+import Home from "./Home";
+import Players from "./Players";
+import History from './History';
+import League from './League';
+
+import '../App.css';
+
 import JaylenBrown from './../assets/JaylenBrown.png';
 import JasonTatum from './../assets/JasonTatum.png';
 import MarcusSmart from './../assets/MarcusSmart.png';
@@ -24,11 +31,9 @@ import JuhannBegarin from './../assets/JuhannBegarin.jpeg';
 import LukeKornet from './../assets/LukeKornet.png';
 import JuwanMorgan from './../assets/JuwanMorgan.png';
 
-import Home from "./Home";
-import Players from "./Players";
-import History from './History';
 
-import '../App.css';
+
+
 
 function App() {
 
@@ -140,8 +145,32 @@ useEffect(() => {
   }).catch(err => {
     console.log(err)
   })
-}, [])
+}, []);
+
+const [playersStats, setPlayersStats] = useState([])
  
+useEffect(() => {
+  axios.get("https://www.balldontlie.io/api/v1/stats?seasons[]=2018&seasons[]=2015&player_ids[]=1&player_ids[]=2&postseason=true")
+  .then ( res => {
+    console.log(res.data.data)
+    setPlayersStats(res.data.data)
+  }).catch(err => {
+    console.log(err)
+  })
+});
+
+const [nbaTeams, setNbaTeams] = useState([])
+
+useEffect(() => {
+  axios.get("https://www.balldontlie.io/api/v1/teams")
+  .then ( res => {
+    console.log(res.data.data)
+    setNbaTeams(res.data.data)
+  }).catch(err => {
+    console.log(err)
+  })
+})
+
   return (
     <div id="app">      
       <NavBar />
@@ -156,10 +185,14 @@ useEffect(() => {
         <Route path="/history">
           <History />
         </Route>
+        <Route>
+          <League />
+        </Route>
       </Switch>      
       <Footer />
     </div>
   )
+
 }
 
 

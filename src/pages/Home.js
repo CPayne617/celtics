@@ -1,7 +1,13 @@
+
+
 const Home = () => {
     return (
-        <div>
-            Boston Celtics Home page
+        <div className= "form-container">
+            {/* <form id="form" onSubmit={this.handleSubmit}>
+            <label htmlFor="name">Name: </label>
+						<input type="text" value={this.state.name} onChange={this.handleChange} id="name" />
+						<input type="submit" />
+            </form> */}
         </div>
     )
 }
