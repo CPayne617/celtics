@@ -41,6 +41,9 @@
     width: 100%;
     height: 100%;
   }
+  /* #league {
+    background-image: NBAlogo.jpeg;
+  } */
   .search {
     display: flex;
     justify-content: center;
